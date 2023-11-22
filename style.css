@@ -1,0 +1,19 @@
+.atmosphere {
+    background-color: blue;
+}
+
+.crust {
+    background-color: green;
+}
+
+.mantle {
+    background-color: brown;
+}
+
+.outer-core {
+    background-color: orange;
+}
+
+.inner-core {
+    background-color: orangered;
+}
