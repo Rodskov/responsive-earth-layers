@@ -1,19 +1,29 @@
 .atmosphere {
+    background-image: url("media/atmosphere.png");
     background-color: blue;
+    height: 300px;
 }
 
 .crust {
+    background-image: url("media/crust.jpg");
     background-color: green;
+    height: 300px;
 }
 
 .mantle {
+    background-image: url("media/mantle.jpg");
     background-color: brown;
+    height: 300px;
 }
 
 .outer-core {
+    background-image: url("media/outer-core.jpg");
     background-color: orange;
+    height: 300px;
 }
 
 .inner-core {
+    background-image: url("media/inner-core.jpg");
     background-color: orangered;
+    height: 300px;
 }
