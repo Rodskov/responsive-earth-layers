@@ -10,7 +10,28 @@ body {
     position: fixed;
     top: 10px;
     left: 10px;
-    z-index: 1000; /* Adjust the z-index as needed */
+    z-index: 1000;
+}
+
+.navigation {
+    position: fixed;
+    top: 120px;
+    right: 0px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000; 
+}
+
+.nav-item {
+    width: 120px;
+    height: 30px; 
+    color:rgb(0, 0, 0);
+    background-color: rgb(166, 223, 233); 
+    margin-bottom: 10px;
+    cursor: hidden;
+    align-items: center;
+    text-align: center;
 }
 
 .atmosphere, .crust,
@@ -120,6 +141,6 @@ body {
 
 @media only screen and (max-width: 768px) {
     .atmosphere h2, .mantle h2, .outer-core h2, .inner-core h2, .text, .crust h2, .crust .text, .footer h2, a {
-        font-size: 14px; /* Adjust the font size for smaller screens */
+        font-size: 14px;
     }
 }
