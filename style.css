@@ -6,9 +6,16 @@ body {
     color: white;
 }
 
+.logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000; /* Adjust the z-index as needed */
+}
+
 .atmosphere, .crust,
 .mantle, .outer-core,
-.inner-core {
+.inner-core, .footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,24 +79,47 @@ body {
     margin-top: -20px;;
 }
 
+.footer {
+    background-image: url("media/footer.jpg");
+    background-color: rgba(255, 152, 17, 0.788);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 900px;
+}
+
 .atmosphere h2,
 .mantle h2,
 .outer-core h2,
 .inner-core h2,
-.text {
+.footer h1,
+.text, a {
     max-width: 800px;
     line-height: 1.5;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    transition: font-size 0.2s ease-in-out;
 }
 
 .crust h2, .crust .text {
     max-width: 800px;
     line-height: 1.5;
     color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 8px rgba(255, 255, 255, 1);
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 1);
+    transition: font-size 0.2s ease-in-out;
+}
+
+.text {
+    margin: 30px;
 }
 
 .atmosphere, .crust, .mantle, .outer-core, .inner-core {
     margin-top: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    .atmosphere h2, .mantle h2, .outer-core h2, .inner-core h2, .text, .crust h2, .crust .text, .footer h2, a {
+        font-size: 14px; /* Adjust the font size for smaller screens */
+    }
 }
