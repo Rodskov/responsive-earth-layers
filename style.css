@@ -1,29 +1,95 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 20px;
+    color: white;
+}
+
+.atmosphere, .crust,
+.mantle, .outer-core,
+.inner-core {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
 .atmosphere {
     background-image: url("media/atmosphere.png");
     background-color: blue;
-    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-top: -25px;
 }
 
 .crust {
     background-image: url("media/crust.jpg");
     background-color: green;
-    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 900px;
+    margin-top: -20px;
 }
 
 .mantle {
     background-image: url("media/mantle.jpg");
     background-color: brown;
-    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 900px;
+    margin-top: -20px;
 }
 
 .outer-core {
     background-image: url("media/outer-core.jpg");
     background-color: orange;
-    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 900px;
+    margin-top: -20px;
 }
 
 .inner-core {
     background-image: url("media/inner-core.jpg");
     background-color: orangered;
-    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 900px;
+    margin-top: -20px;;
+}
+
+.atmosphere h2,
+.mantle h2,
+.outer-core h2,
+.inner-core h2,
+.text {
+    max-width: 800px;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.crust h2, .crust .text {
+    max-width: 800px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 1);
+}
+
+.atmosphere, .crust, .mantle, .outer-core, .inner-core {
+    margin-top: 0px;
 }
